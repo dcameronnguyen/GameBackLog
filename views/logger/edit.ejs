@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Game Back-Logger</title>
+</head>
+<body>
+    <h1>Add A New Log</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/logs">Back to Logger</a>
+        <a href="/logs/new">Add New Game Log</a>
+    </nav>
+
+    <form action="/logs/<%= log._id %>?_method=PUT" method="POST" autocomplete="off">
+        <fieldset>
+            <Legend>Game Log Info</Legend>
+
+            <label for="userID">User ID :</label>
+            <input type="text" id="userID", name="userId" value="<%= log.userId %>">
+
+            <label for="gameName">Title: </label>
+            <input type="text" id="gameName" name="gameTitle" value="<%= log.gameTitle %>">
+
+            <label for="Platform">Platform: </label>
+            <select name="platform" id="Platform">
+                <option value="PC">PC</option>
+                <option value="Playstation 4">Playstation 4</option>
+                <option value="Playstation 5">Playstation 5</option>
+                <option value="Xbox One X">Xbox One X</option>
+                <option value="Xbox Series S">Xbox Series S</option>
+                <option value="Xbox Series X">Xbox Series X</option>
+                <option value="Switch">Switch</option>
+            </select>
+
+            <label for="completeS">Completion Status: </label>
+            <select name="completionStatus" id="completeS">
+                <option value="To Play">To Play</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+
+            <label for="rating">User Rating: </label>
+            <select name="userRating" id="rating">
+                <option value="10 - Masterpiece">10 - Masterpiece</option>
+                <option value="9 - Great">9 - Great</option>
+                <option value="8 - Very Good">8 - Very Good</option>
+                <option value="7 - Good">7 - Good</option>
+                <option value="6 - Fine">6 - Fine</option>
+                <option value="5 - Average">5 - Average</option>
+                <option value="4 - Bad">4 - Bad</option>
+                <option value="3 - Very Bad">3 - Very Bad</option>
+                <option value="2 - Horrible">2 - Horrible</option>
+                <option value="1 - Appalling">1 - Appalling</option>
+                <option value="Not Yet Applicable">Not Yet Applicable</option>
+            </select>
+
+            <input type="submit" value="Update Game Log!">
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

@@ -5,7 +5,8 @@ module.exports = {
     new: newLog,
     create,
     delete: deleteLog,
-
+    edit,
+    update
 }
 
 function index(req, res) {
@@ -27,6 +28,18 @@ function create(req, res) {
 
 function deleteLog(req, res) {
     Log.findByIdAndDelete(req.params.id, function(err, deletedLog) {
+        res.redirect('/logs');
+    });
+}
+
+function edit(req, res) {
+    Log.findById(req.params.id, function(err, log) {
+        res.render('logger/edit', { log });
+    });
+}
+
+function update(req, res) {
+    Log.findByIdAndUpdate(req.params.id, req.body, function(err, updatedLog) {
         res.redirect('/logs');
     });
 }
