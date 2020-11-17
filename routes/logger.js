@@ -7,5 +7,6 @@ const loggerCtrl = require('../controllers/logger');
 router.get('/', loggerCtrl.index);
 router.get('/new', loggerCtrl.new);
 router.post('/', loggerCtrl.create);
+router.delete('/:id', loggerCtrl.delete);
 
 module.exports = router;
