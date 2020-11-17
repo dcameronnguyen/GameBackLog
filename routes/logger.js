@@ -3,7 +3,6 @@ const express = require('express');
 const router = express.Router();
 
 const loggerCtrl = require('../controllers/logger');
-const logger = require('../models/logger');
 
 router.get('/', loggerCtrl.index);
 router.get('/new', loggerCtrl.new);

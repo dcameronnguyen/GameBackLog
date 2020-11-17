@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Oxygen';
+
+}
+
+#homebody, #indexbody, #newbody, #editbody {
+    margin: auto;
+    min-height: 100vh;
+    background-image: url('https://wallpaperplay.com/walls/full/1/7/c/78343.jpg');
+    background-position: center;
+}
+
+#homebody > h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgb(0, 23, 153);
+}
+
+
+#homebody > nav, #indexbody > nav, #newbody > nav, #editbody > nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#indexbody > h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 15px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgb(0, 23, 153);
+}
+
+#indexbody > nav {
+    padding-bottom: 15px;
+}
+
+#indexbody > fieldset, #newbody > fieldset {
+    border: 2px solid rgb(255, 0, 242);
+}
+
+#indexFieldSet {
+    background-color: rgb(190, 190, 190);
+}
+
+#indexLegend, #newLegend, #editLegend {
+    background-color: springgreen;
+    border: 1px solid rgb(8, 53, 30);
+    border-radius: 2px;
+}
+
+#newbody > h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 15px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgb(0, 23, 153);
+}
+
+#newbody > nav {
+    padding-bottom: 20px;
+}
+
+#newForm > fieldset {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid steelblue;
+    border-radius: 2px;
+    padding: 13px 0 13px 0;
+    list-style: none;
+    background-color: rgb(190, 190, 190);
+}
+
+.addGameButton {
+    background-color: springgreen;
+    border: 1px solid black;
+}
+
+#editbody > h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 15px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgb(0, 23, 153);
+}
+
+#editbody > nav {
+    padding-bottom: 20px;
+}
+
+#editForm > fieldset {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid steelblue;
+    border-radius: 2px;
+    padding: 13px 0 13px 0;
+    list-style: none;
+    background-color: rgb(190, 190, 190);
+}
+
+
+li {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid steelblue;
+    border-radius: 2px;
+    padding: 13px 0 13px 0;
+    list-style: none;
+    background-color: rgb(190, 190, 190);
+}
+
+.deleteButton {
+    background-color: red;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    display: inline;
+    width: 62px;
+    height: 35px;
+}
+
+
+.editButton {
+    background-color: rgb(226, 179, 25);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    display: inline;
+    width: 62px;
+    height: 35px;
+}
+
+
+.homeButton {
+    font-size: 30px;
+    width: 300px;
+    height: 150px;
+}
+
+.indexButton {
+    font-size: 20px;
+    width: 250px;
+    height: 125;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .homebutton {
+        font-size: 15px;
+        width: 150px;
+        height: 75px;
+    }
+}

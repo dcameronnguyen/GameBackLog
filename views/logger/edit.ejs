@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Game Back-Logger</title>
 </head>
-<body>
+<body id="editbody">
     <h1>Add A New Log</h1>
     <nav>
-        <a href="/">Home</a>
-        <a href="/logs">Back to Logger</a>
-        <a href="/logs/new">Add New Game Log</a>
+        <a href="/"><button class="indexButton">Home 🏠</button></a>
+        <a href="/logs"><button class="indexButton">Logger 🪓</button></a>
+        <a href="/logs/new"><button class="indexButton">Add New Game Log ➕</button></a>
     </nav>
 
-    <form action="/logs/<%= log._id %>?_method=PUT" method="POST" autocomplete="off">
+    <form action="/logs/<%= log._id %>?_method=PUT" method="POST" autocomplete="off" id="editForm">
         <fieldset>
-            <Legend>Game Log Info</Legend>
+            <Legend id="editLegend">Game Log Info</Legend>
 
             <label for="userID">User ID :</label>
             <input type="text" id="userID", name="userId" value="<%= log.userId %>">
@@ -57,7 +57,7 @@
                 <option value="Not Yet Applicable">Not Yet Applicable</option>
             </select>
 
-            <input type="submit" value="Update Game Log!">
+            <input type="submit" value="Update Game Log!" class="addGameButton">
 
         </fieldset>
 

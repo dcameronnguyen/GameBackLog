@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Game Back-Logger</title>
 </head>
-<body>
+<body id="indexbody">
     <h1>All User Game Logs</h1>
     <nav>
-        <a href="/">Home</a>
-        <a href="/logs">Logger</a>
-        <a href="/logs/new">Add New Game Log</a>
+        <a href="/"><button class="indexButton">Home 🏠</button></a>
+        <a href="/logs"><button class="indexButton">Logger 🪓</button></a>
+        <a href="/logs/new"><button class="indexButton">Add New Game Log ➕</button></a>
     </nav>
-    <ul>
-        <% logs.forEach(function(log) { %>
-            <li>
-                <strong>UserID: </strong> <%= log.userId %>
+    <fieldset id="indexFieldSet">
+        <legend id="indexLegend">Game Logs</legend>
+        <ul>
+            <% logs.forEach(function(log) { %>
+                <li>
+                    <strong>UserID: </strong> <%= log.userId %>
+    
+                    <strong>Title: </strong> <%= log.gameTitle %>
+    
+                    <strong>Status: </strong> <%= log.completionStatus %>
+    
+                    <strong>User Rating: </strong> <%= log.userRating %>
+    
+                    <button class="editButton"><a class="editButton" href="/logs/<%= log._id %>/edit">Edit</a></button>
+    
+                    <form action="/logs/<%= log._id %>?_method=DELETE" method="POST" class="deleteButton">
+                        <input type="submit" value="Delete" class="deleteButton">
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
 
-                <strong>Title: </strong> <%= log.gameTitle %>
-
-                <strong>Status: </strong> <%= log.completionStatus %>
-
-                <strong>User Rating: </strong> <%= log.userRating %>
-
-                <form action="/logs/<%= log._id %>?_method=DELETE" method="POST">
-                    <input type="submit" value="Delete">
-                </form>
-                <button><a href="/logs/<%= log._id %>/edit">Edit</a></button>
-            </li>
-        <% }); %>
-    </ul>
+    </fieldset>
 
 </body>
 </html>
