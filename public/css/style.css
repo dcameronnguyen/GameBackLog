@@ -162,4 +162,14 @@ a {
         width: 150px;
         height: 75px;
     }
+    #newForm > fieldset {
+        display: grid;
+        grid-gap: 20px;
+        justify-content: space-around;
+    }
+    #editForm > fieldset {
+        display: grid;
+        grid-gap: 20px;
+        justify-content: space-around;
+    }
 }
