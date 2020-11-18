@@ -29,16 +29,16 @@ Wireframes:
 Actual Site:
 
 Home:
-![wireframe](./public/images/gamebacklog_home.png)
+![wireframe](./public/images/gamebacklog_home.PNG)
 
 Index:
-![wireframe](./public/images/gamebacklog_index.png)
+![wireframe](./public/images/gamebacklog_index.PNG)
 
 Add:
-![wireframe](./public/images/gamebacklog_add.png)
+![wireframe](./public/images/gamebacklog_add.PNG)
 
 Edit:
-![wireframe](./public/images/gamebacklog_edit.png)
+![wireframe](./public/images/gamebacklog_edit.PNG)
 
 ## Getting Started
 [Click Here](https://gamebacklogger.herokuapp.com/) to see the deployed app!
