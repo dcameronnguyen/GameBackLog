@@ -24,21 +24,21 @@ ERD:
 
 Wireframes: 
 
-![wireframe](./images/Project_2_Game_Back-Logger_Wireframes.png)
+![wireframe](./public/images/Project_2_Game_Back-Logger_Wireframes.png)
 
 Actual Site:
 
 Home:
-![wireframe](./images/gamebacklog_home.png)
+![wireframe](./public/images/gamebacklog_home.png)
 
 Index:
-![wireframe](./images/gamebacklog_index.png)
+![wireframe](./public/images/gamebacklog_index.png)
 
 Add:
-![wireframe](./images/gamebacklog_add.png)
+![wireframe](./public/images/gamebacklog_add.png)
 
 Edit:
-![wireframe](./images/gamebacklog_edit.png)
+![wireframe](./public/images/gamebacklog_edit.png)
 
 ## Getting Started
 [Click Here](https://gamebacklogger.herokuapp.com/) to see the deployed app!
