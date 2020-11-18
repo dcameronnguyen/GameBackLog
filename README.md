@@ -20,7 +20,7 @@ Simple web application that adds games to a list to track.
 ## Screenshots:
 ERD:
 
-![wireframe](./images/project_2_erd.png)
+![wireframe](./public/images/project_2_erd.png)
 
 Wireframes: 
 
